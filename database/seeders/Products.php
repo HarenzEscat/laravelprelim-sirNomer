@@ -42,7 +42,7 @@ class Products extends Seeder
             'Email'=>'123@mail.com',
             'Phone'=>112233
         ]);
-        DB::table('order_detail')->insert([
+        DB::table('order_details')->insert([
             'OrderDetailID'=>121,
             'OrderID'=>41,
             'ProductID'=>1,

@@ -16,21 +16,15 @@
     </tr>   
 </thread>
 
-<tbody>
-    <td>asdas</td>
-    <td>asdas</td>
-    <td>asdasd</td>
-    <td>asdasd</td>
-    <td>asdasd</td>
-</tbody>
-
-<tbody>
-    <td>asdas</td>
-    <td>asdas</td>
-    <td>asdasd</td>
-    <td>asdasd</td>
-    <td>asdasd</td>
-</tbody>
+@foreach ($order_details as $order_detail )
+ <tr>
+    <td>{{ $order_details->OrderDetailId; }}</td>
+    <td>{{ $order_details->OrderID; }}</td>
+    <td>{{ $order_details->ProductId; }}</td>
+    <td>{{ $order_details->Quantity; }}</td>
+    <td>{{ $order_details->Subtotal; }}</td>
+</tr> 
+    @endforeach
 </div>
 
     <div class="row">
