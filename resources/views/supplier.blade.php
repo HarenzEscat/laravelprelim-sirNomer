@@ -15,8 +15,8 @@
     </tr>   
 </thead>
 
-foreach ($suppliers as $supplier )
- @<tr>
+ @foreach ($suppliers as $supplier )
+ <tr>
     <td>{{ $suppliers->supplierId; }}</td>
     <td>{{ $suppliers->supplierName; }}</td>
     <td>{{ $suppliers->ContactNo; }}</td>

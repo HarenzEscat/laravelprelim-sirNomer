@@ -35,7 +35,7 @@ class Products extends Seeder
             'TotalAmount'=>99,
             'Status'=>'Out of stock'
         ]);
-        DB::table('customer')->insert([
+        DB::table('customers')->insert([
             'CustomerID'=>12,
             'FirstName'=>'June',
             'LastName'=>'asds',

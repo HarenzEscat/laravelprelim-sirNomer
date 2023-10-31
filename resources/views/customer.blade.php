@@ -16,21 +16,15 @@
     </tr>   
 </thread>
 
-<tbody>
-    <td>asdas</td>
-    <td>asdas</td>
-    <td>asdas</td>
-    <td>asdas</td>
-    <td>asdas</td>
-</tbody>
-
-<tbody>
-    <td>asdas</td>
-    <td>asdas</td>
-    <td>asdas</td>
-    <td>asdas</td>
-    <td>asdas</td>
-</tbody>
+@foreach ($customers as $customer )
+ <tr>
+    <td>{{ $customers->customerId; }}</td>
+    <td>{{ $customers->FirstName; }}</td>
+    <td>{{ $customers->LastName; }}</td>
+    <td>{{ $customers->Email; }}</td>
+    <td>{{ $customers->Phone; }}</td>
+</tr> 
+    @endforeach
 </div>
 
     <div class="row">
