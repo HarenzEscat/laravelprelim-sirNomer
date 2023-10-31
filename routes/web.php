@@ -2,6 +2,7 @@
 
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\AuthController;
 use App\Http\Controllers\SupplierController;
 use App\Http\Controllers\ProductController;
 use App\Http\Controllers\CategoryController;
@@ -32,5 +33,6 @@ Route::get('/category',[CategoryController::class,'index'])->name('category');
 Route::get('/order',[OrderController::class,'index'])->name('order');
 Route::get('/customer',[CustomerController::class,'index'])->name('customer');
 Route::get('/orderdetail',[OrderDetailController::class,'index'])->name('orderdetail');
-
+Route::get('/login',[AuthController::class,'index'])->name('login');
+Route::post('/login',[AuthController::class,'login'])->name('login.submit');
 

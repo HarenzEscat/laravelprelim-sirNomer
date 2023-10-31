@@ -19,6 +19,7 @@
             <a class="p-3" href="{{ route('order') }}">Order</a>
             <a class="p-3" href="{{ route('customer') }}">Customer</a>
             <a class="p-3" href="{{ route('orderdetail') }}">Order Detail</a>
+            <a class="p3"  href="{{ route('login') }}">Log In</a>
             </nav>
         </div>
     </div>
