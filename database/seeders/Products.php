@@ -29,7 +29,7 @@ class Products extends Seeder
             'SuplierID'=>41,
             'Supplier_Name'=>'ss',
         ]);
-        DB::table('order')->insert([
+        DB::table('orders')->insert([
             'OrderID'=>41,
             'OrderDate'=>'June 91 7054',
             'TotalAmount'=>99,

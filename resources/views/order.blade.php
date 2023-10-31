@@ -6,30 +6,22 @@
 <br>
 <div>
   <table class="table table-dark table-striped">
-<thread>
+<thead>
     <tr>
         <th>OrderId</th>
         <th>OrderDate</th>
         <th>TotalAmount</th>
         <th>Status</th>
     </tr>   
-</thread>
-
-<tbody>
-    <td>asdas</td>
-    <td>asdas</td>
-    <td>asdasd</td>
-    <td>asdasd</td>
-
-</tbody>
-
-<tbody>
-    <td>asdas</td>
-    <td>asdas</td>
-    <td>asdasd</td>
-    <td>asdasd</td>
-
-</tbody>
+</thead>
+@foreach ($orders as $order )
+ <tr>
+    <td>{{ $orders->OrderId; }}</td>
+    <td>{{ $orders->OrderDate; }}</td>
+    <td>{{ $orders->TotalAmount; }}</td>
+    <td>{{ $orders->Status; }}</td>
+</tr> 
+    @endforeach
 </div>
 
     <div class="row">
