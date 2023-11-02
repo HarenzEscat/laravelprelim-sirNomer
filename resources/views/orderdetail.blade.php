@@ -6,7 +6,7 @@
 <br>
 <div>
   <table class="table table-dark table-striped">
-<thread>
+<thead>
     <tr>
         <th>OrderDetailId</th>
         <th>OrderId</th>
@@ -14,9 +14,9 @@
         <th>Quantity</th>
         <th>Subtotlal</th>
     </tr>   
-</thread>
+</thead>
 
-@foreach ($order_details as $order_detail )
+ @foreach ($order_details as $order_detail )
  <tr>
     <td>{{ $order_details->OrderDetailId; }}</td>
     <td>{{ $order_details->OrderID; }}</td>

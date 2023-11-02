@@ -13,13 +13,13 @@
         <div class="row justify-content-between">
             <div id="aa" class="text-warning">Inventory System</div> 
             <nav>
+            <a class="p3"  href="{{ route('login') }}">Log In</a>
             <a class="p-3" href="{{ route('product') }}">Products</a>
             <a class="p-3" href="{{ route('supplier') }}">Supplier</a>
             <a class="p-3" href="{{ route('category') }}">Category</a>
             <a class="p-3" href="{{ route('order') }}">Order</a>
             <a class="p-3" href="{{ route('customer') }}">Customer</a>
             <a class="p-3" href="{{ route('orderdetail') }}">Order Detail</a>
-            <a class="p3"  href="{{ route('login') }}">Log In</a>
             </nav>
         </div>
     </div>

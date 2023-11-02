@@ -14,7 +14,7 @@
 </thead>
 
 
-@foreach ($categories as $category )
+ @foreach ($categories as $category )
  <tr>
     <td>{{ $categories->supplierId; }}</td>
     <td>{{ $categories->supplierName; }}</td>

@@ -1,3 +1,5 @@
+@extends('layout.app')
+
 @section('content')
     <h1>Authentication Page</h1>
     @error('message')
@@ -20,5 +22,5 @@
 @endsection
 
 @section('title')
-    Authentication Page
+    Login Page
 @endsection

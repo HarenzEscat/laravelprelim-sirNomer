@@ -6,7 +6,7 @@
 <br>
 <div>
   <table class="table table-dark table-striped">
-<thread>
+<thead>
     <tr>
         <th>ProductId</th>
         <th>ProductName</th>
@@ -14,9 +14,9 @@
         <th>Price</th>
         <th>QuantityInStock</th>
     </tr>   
-</thread>
+</thead>
 <tbody>
-    @foreach ($products as $product )
+    @foreach ($products as $product)
  <tr>
     <td>{{ $products->ProductId; }}</td>
     <td>{{ $products->ProductName; }}</td>

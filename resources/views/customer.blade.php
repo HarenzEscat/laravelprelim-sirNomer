@@ -6,7 +6,7 @@
 <br>
 <div>
   <table class="table table-dark table-striped">
-<thread>
+<thead>
     <tr>
         <th>Customer</th>
         <th>FirstName</th>
@@ -14,9 +14,9 @@
         <th>Email</th>
         <th>Phone</th>
     </tr>   
-</thread>
+</thead>
 
-@foreach ($customers as $customer )
+ @foreach ($customers as $customer )
  <tr>
     <td>{{ $customers->customerId; }}</td>
     <td>{{ $customers->FirstName; }}</td>
